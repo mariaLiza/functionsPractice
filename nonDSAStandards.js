@@ -13,23 +13,28 @@ console.log(findSum([1, 2, 3, 4, 5]));
 
 // Using reduce write a function that returns the sum of the array.
 
-return  [1, 2, 3, 4, 5].reduce((acc, currEl) => {
+const reduceSum = (arr) => {
+    return  arr.reduce((acc, currEl) => {
     acc += currEl;
     return acc;
   }, 0)
+}
+console.log("reduce", reduceSum([1,2,3,4,5]))
 
 
 // Using filter return an array of only values greater than or equal to 3.
 
-return [1, 2, 3, 4, 5].filter((el) => {
+const arr2 = [1,2,3,4,5]
+return console.log(arr2.filter((el) => {
     let target = 3;
     return el >= target;
-  });
+  }));
+
 
 // Using map return the array [2, 4, 6, 8, 10].
 
-const arr2 = [1, 2, 3, 4, 5];
-return arr2.map((el) => {
+let arr3 = [1,2,3,4,5]
+return arr3.map((el) => {
     return el * 2;
   });
 
