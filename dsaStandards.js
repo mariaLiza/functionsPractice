@@ -10,28 +10,6 @@ function TreeNode(val, left, right) {
 // @return {boolean}
 
 var isSameTree = function (p, q) {
-  // let same = true
-  if (!p && !q) return true;
-  if (p === null && q === null) return false;
-  if (p === null || q === null || p.val !== q.val) return;
-
-  if (isSameTree(p.left, q.left) && isSameTree(p.right, q.right)) {
-    return true;
-  }
-};
-
-// var isSameTree = function (p, q) {
-//   if (!p && !q) return true;
-
-//   return (
-//     p != null &&
-//     q != null &&
-//     p.val === q.val &&
-//     isSameTree(p.left, q.left) &&
-//     isSameTree(p.right, q.right)
-//   );
-// };
-var isSameTree = function (p, q) {
   let equal = true;
 
   //if nodes empty on either side, nodes are equal
