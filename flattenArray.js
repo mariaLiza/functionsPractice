@@ -10,15 +10,16 @@
 
 // console.log(newArr)
 
-let result = []
+// let result = []
 
-const flatten = (arr) => {
-    arr.forEach(el => {
-        if(arr.isArray(el)) {
-            result =   result.concat(flatten(el))
-        } else {
-            result.push(el)
-        }
-    })
-    return result
-}
+// const flatten = (arr) => {
+//     arr.forEach(el => {
+//         if(arr.isArray(el)) {
+//             result =   result.concat(flatten(el))
+//         } else {
+//             result.push(el)
+//         }
+//     })
+//     return result
+// }
+
