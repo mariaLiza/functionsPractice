@@ -24,17 +24,15 @@ console.log("reduce", reduceSum([1,2,3,4,5]))
 
 // Using filter return an array of only values greater than or equal to 3.
 
-const arr2 = [1,2,3,4,5]
-return console.log(arr2.filter((el) => {
+const result = arr.filter((el) => {
     let target = 3;
     return el >= target;
-  }));
+  });
 
 
 // Using map return the array [2, 4, 6, 8, 10].
 
-let arr3 = [1,2,3,4,5]
-return arr3.map((el) => {
+const result = arr.map((el) => {
     return el * 2;
   });
 
